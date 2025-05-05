@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Webpage</h1>
+    <p id="message">Welcome to Loid's interactive webpage!</p>
+
+    <!-- Button with click and double-click actions -->
+    <button id="actionButton">Click Me!</button>
+
+    <!-- Hover effect -->
+    <div id="hoverBox">Hover over me!</div>
+
+    <!-- Keypress detection -->
+    <input type="text" id="keypressInput" placeholder="Type something...">
+
+    <!-- Image gallery -->
+    <div class="gallery">
+        <img src="image1.jpg" alt="Image 1">
+        <img src="image2.jpg" alt="Image 2">
+        <img src="img.jpg" alt="Image 3">
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+        <button class="tab" data-content="tab1">Tab 1</button>
+        <button class="tab" data-content="tab2">Tab 2</button>
+        <button class="tab" data-content="tab3">Tab 3</button>
+    </div>
+    <div id="tabContent">
+        <p id="tab1" class="tab-pane">Content for Tab 1</p>
+        <p id="tab2" class="tab-pane hidden">Content for Tab 2</p>
+        <p id="tab3" class="tab-pane hidden">Content for Tab 3</p>
+    </div>
+
+    <!-- Form -->
+    <form id="form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <span id="emailFeedback"></span>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" minlength="8" required>
+        <span id="passwordFeedback"></span>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

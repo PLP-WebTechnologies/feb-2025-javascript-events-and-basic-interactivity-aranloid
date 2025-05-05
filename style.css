@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-image: -webkit-image-set(url('background.jpg') 1x, url(';
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#hoverBox {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+#hoverBox:hover {
+    background-color: lightcoral;
+}
+
+.gallery img {
+    width: 150px;
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.tabs {
+    margin: 20px 0;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane:not(.hidden) {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form span {
+    color: red;
+    font-size: 12px;
+    display: block;
+}
